@@ -5,11 +5,14 @@ module.exports = function (io) {
 
 	var IO = io
 
+
 	io.on("connection", function (socket) {
 		console.log("----------------------")
 		console.log(colors.green("Socket Connected"))
 		console.log(`${socket.id}`)
 		console.log("-----------------\n")
+
+		var rooms = []
 
 		socketData[socket.id] = {
 			name: "",
@@ -24,7 +27,7 @@ module.exports = function (io) {
 		})
 
 		socket.on("name", function (data) {
-			console.log(socket.rooms)
+
 			if (typeof data == "string") {
 				socketData[socket.id]["name"] = data
 				emitAllData()
@@ -35,6 +38,21 @@ module.exports = function (io) {
 			io.sockets.connected[data["id"]].emit("poke", data["id"])
 		})
 
+		socket.on("joinRoom", function (data) {
+			if (typeof data == "string") {
+				socket.join(data, function (error) {
+					if (!error) {
+						console.log(`${socket.id} has joined ${data}`)
+						socket.emit("joinedRooms", Object.keys(socket.rooms))
+					}
+				})				
+				
+			}
+
+		})
+
+
+		socket.emit("joinedRooms", Object.keys(socket.rooms))
 		emitAllData()
 	})
 
