@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      "ekko-lightbox",
+      "C:\\Users\\abdul\\Documents\\Programming\\abdulhannanali.github.io"
+    ]
+  ],
+  "_from": "ekko-lightbox@latest",
+  "_id": "ekko-lightbox@4.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ekko-lightbox",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "email": "hello@ashleyd.ws",
+    "name": "ashleydw"
+  },
+  "_npmVersion": "3.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ekko-lightbox",
+    "raw": "ekko-lightbox",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ekko-lightbox/-/ekko-lightbox-4.0.1.tgz",
+  "_shasum": "ab298b89b604d02230b1f9afae116c238a9ce051",
+  "_shrinkwrap": null,
+  "_spec": "ekko-lightbox",
+  "_where": "C:\\Users\\abdul\\Documents\\Programming\\abdulhannanali.github.io",
+  "author": {
+    "email": "hello@ashleyd.ws",
+    "name": "ashleydw"
+  },
+  "bugs": {
+    "url": "https://github.com/ashleydw/lightbox/issues"
+  },
+  "dependencies": {},
+  "description": "A lightbox gallery plugin for Bootstrap 3 based on the modal plugin",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-recess": "^1.0.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "ab298b89b604d02230b1f9afae116c238a9ce051",
+    "tarball": "https://registry.npmjs.org/ekko-lightbox/-/ekko-lightbox-4.0.1.tgz"
+  },
+  "gitHead": "0f6c04a4205e36782ca98044b50c47b78edbe073",
+  "homepage": "https://github.com/ashleydw/lightbox",
+  "keywords": [
+    "lightbox",
+    "gallery",
+    "bootstrap",
+    "jquery",
+    "modal"
+  ],
+  "less": "ekko-lightbox.less",
+  "license": {
+    "type": "GNU GENERAL PUBLIC LICENSE",
+    "url": "https://github.com/ashleydw/lightbox/blob/master/LICENSE.txt"
+  },
+  "main": "dist/ekko-lightbox.min.js",
+  "maintainers": [
+    {
+      "email": "hello@ashleyd.ws",
+      "name": "ashleydw"
+    }
+  ],
+  "name": "ekko-lightbox",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*"
+      ]
+    }
+  ],
+  "npmName": "ekko-lightbox",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleydw/lightbox.git"
+  },
+  "scripts": {},
+  "style": "dist/ekko-lightbox.css",
+  "version": "4.0.1"
+}
